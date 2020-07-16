@@ -5,10 +5,6 @@ import SEO from "components/seo"
 import Image from "components/image"
 import Icons from "components/icons"
 
-const Button = tw.button`
-  bg-blue-500 hover:bg-blue-800 text-white p-2 rounded
-`
-
 const Name = tw.h1`
 mb-3 text-4xl text-blue-400 md:text-6xl
 `

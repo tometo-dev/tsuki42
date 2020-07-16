@@ -40,6 +40,6 @@ module.exports = {
         components: path.join(__dirname, "src/components"),
       },
     },
-    "gatsby-plugin-emotion"
+    "gatsby-plugin-emotion",
   ],
 }
