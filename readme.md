@@ -23,7 +23,7 @@
 <img src="https://i.imgur.com/kdKhgx6.gif" width="240px" align="center">
 
 <details>
- 
+
 ![My github stats](https://github-readme-stats.vercel.app/api?username=tsuki42&show_icons=false)
 
 </details>
