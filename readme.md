@@ -2,8 +2,8 @@
   <table border="0" cellspacing="0" cellpadding="0">
     <tbody>
       <tr>
-        <td><img src="https://raw.githubusercontent.com/tsuki42/tsuki42/main/src/assets/pic1.gif" width="200" height="auto"/></td>
-        <td><img src="https://raw.githubusercontent.com/tsuki42/tsuki42/main/src/assets/pic1.gif" width="200" height="auto"/></td>
+        <td><img src="https://raw.githubusercontent.com/tsuki42/tsuki42/main/src/assets/cute-puppy.gif" width="200" height="auto"/></td>
+        <td><img src="https://raw.githubusercontent.com/tsuki42/tsuki42/main/src/assets/cute-puppy.gif" width="200" height="auto"/></td>
       <tr>
     </tbody>
   </table>
