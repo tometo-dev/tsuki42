@@ -39,7 +39,7 @@ const FormTextArea = styled.textarea`
   font-size: 14px;
 `
 
-const SendButton = styled.input`
+const SendButton = styled.button`
   margin-top: 10px;
   width: 100%;
   padding-top: 10px;
@@ -50,18 +50,17 @@ const SendButton = styled.input`
 `
 
 const Contact = () => {
-  const { register, handleSubmit, errors } = useForm()
-
-  const onSubmit = (data) => {
-    console.log({ data })
-  }
+  const { register, errors } = useForm()
 
   return (
     <Section2 id="contact">
       <MainContainer>
         <h3 style={{ textAlign: "center" }}>Get In Touch</h3>
-        <ContactForm onSubmit={handleSubmit(onSubmit)}>
-          <a name="contact"></a>
+        <ContactForm
+          action="https://send.pageclip.co/cUBUdTiedO9NHcjzvwd6NzAMOixeQsjB"
+          className="pageclip-form"
+          method="post"
+        >
           <div>
             <FormLabel>Name</FormLabel>
             <FormInput
@@ -106,12 +105,9 @@ const Contact = () => {
             )}
           </div>
 
-          <SendButton type="submit" value="Send" />
-
-          <h5>Note:</h5>
-          <p>
-            This is still a work in progress. This form isn't working right now.
-          </p>
+          <SendButton type="submit" className="pageclip-form__submit">
+            Send
+          </SendButton>
         </ContactForm>
       </MainContainer>
     </Section2>
