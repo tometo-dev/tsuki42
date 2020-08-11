@@ -1,7 +1,8 @@
 import React from "react"
+import SEO from "components/seo"
 import GlobalStyles from "components/global-styles"
 import Navigation from "components/navigation"
-import SEO from "components/seo"
+import About from "components/about"
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <GlobalStyles />
       <div>
         <Navigation />
+        <About />
       </div>
     </>
   )
