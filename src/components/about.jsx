@@ -69,16 +69,28 @@ const About = () => {
             </SkillsWrapper>
           </div>
           <SocialLinks>
-            <a target="_blank" href="https://twitter.com/__tsuki__42">
+            <a
+              target="_blank"
+              href="https://twitter.com/__tsuki__42"
+              rel="noreferrer"
+            >
               <TwitterIcon />
               <div> @__tsuki__42</div>
             </a>
             <br />
-            <a target="_blank" href="https://github.com/tsuki42">
+            <a
+              target="_blank"
+              href="https://github.com/tsuki42"
+              rel="noreferrer"
+            >
               <GithubIcon />
               <div>@tsuki42</div>
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/perfectsudh">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/perfectsudh"
+              rel="noreferrer"
+            >
               <LinkedIcon />
               <div>@perfectsudh</div>
             </a>

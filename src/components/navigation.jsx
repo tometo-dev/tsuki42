@@ -138,6 +138,7 @@ const PreviewShadow = styled.div`
 
 const Preview = styled.div`
   width: 300px;
+  height: 180px;
   border: 1.5px solid #17a2b8;
   background-color: var(--previewBg);
   padding: 15px;
@@ -145,6 +146,7 @@ const Preview = styled.div`
 
   @media screen and (max-width: 400px) {
     width: 280px;
+    height: 180px;
   }
 `
 
