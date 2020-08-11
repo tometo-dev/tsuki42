@@ -1,6 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import { Section2, MainContainer } from "components/sections"
+import GithubIcon from "assets/icons/github.svg"
+import LinkedIcon from "assets/icons/linkedin.svg"
+import TwitterIcon from "assets/icons/twitter.svg"
 
 const AboutWrapper = styled.div`
   display: grid;
@@ -20,6 +23,7 @@ const SocialLinks = styled.div`
   display: grid;
   align-content: center;
   text-align: center;
+  gap: 1rem;
 `
 
 const About = () => {
@@ -66,11 +70,17 @@ const About = () => {
           </div>
           <SocialLinks>
             <a target="_blank" href="https://twitter.com/__tsuki__42">
-              Twitter: @__tsuki__42
+              <TwitterIcon />
+              <div> @__tsuki__42</div>
             </a>
             <br />
             <a target="_blank" href="https://github.com/tsuki42">
-              Github: @tsuki42
+              <GithubIcon />
+              <div>@tsuki42</div>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/perfectsudh">
+              <LinkedIcon />
+              <div>@perfectsudh</div>
             </a>
           </SocialLinks>
         </AboutWrapper>

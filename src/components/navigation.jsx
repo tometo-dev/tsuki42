@@ -23,6 +23,14 @@ const IntroWrapper = styled.div`
   grid-template-areas:
     "nav-wrapper nav-wrapper"
     "left-column right-column";
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav-wrapper"
+      "left-column"
+      "right-column";
+  }
 `
 
 const NavWrapper = styled.div`
@@ -108,6 +116,10 @@ const RightColumn = styled.div`
 
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
 `
 const PreviewShadow = styled.div`
   background-color: var(--previewShadow);
@@ -115,6 +127,13 @@ const PreviewShadow = styled.div`
   height: 180px;
   padding-left: 30px;
   padding-top: 30px;
+
+  @media screen and (max-width: 400px) {
+    max-width: 280px;
+    height: 180px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
 `
 
 const Preview = styled.div`
@@ -123,6 +142,10 @@ const Preview = styled.div`
   background-color: var(--previewBg);
   padding: 15px;
   position: relative;
+
+  @media screen and (max-width: 400px) {
+    width: 280px;
+  }
 `
 
 const Corner = styled.div`
