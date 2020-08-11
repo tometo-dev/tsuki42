@@ -164,7 +164,7 @@ const Navigation = () => {
     <Section1>
       <MainContainer>
         <GreetingWrapper>
-          <h1>Hi, I'm Sudhanshu</h1>
+          <h1>Hi, I'm Sudhanshu.</h1>
           <IntroWrapper>
             <NavWrapper>
               <DotsWrapper>
@@ -216,7 +216,9 @@ const Navigation = () => {
               >
                 *Theme settings will be saved for
                 <br />
-                your next visit
+                your next visit.
+                <br />
+                (This is still a work in progress)
               </p>
             </LeftColumn>
             <RightColumn>

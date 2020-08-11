@@ -9,6 +9,6 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
     ></link>
   )
   setPostBodyComponents(
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charSet="utf-8"></script>
   )
 }

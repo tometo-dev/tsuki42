@@ -37,8 +37,14 @@ const About = () => {
             <p>I love learning new things and applying them in my projects.</p>
 
             <p>
-              While I am mostly working on React, I also do backend in Django
-              and Go.
+              While I am mostly working on React, I also do backend in Go and
+              Django.
+            </p>
+
+            <p>
+              While I am currently employed, I am in search of a great team and
+              projects that interest me. Get in touch with me for
+              an interview!
             </p>
 
             <hr />
@@ -46,10 +52,10 @@ const About = () => {
             <h4>TOP EXPERTISE</h4>
 
             <p>
-              Fullstack developer with primary focus on Django + React:{" "}
-              <a target="_blank" href="resume.pdf">
+              Fullstack developer with primary focus on React + Go.
+              {/* <a target="_blank" href="resume.pdf">
                 Download Resume
-              </a>
+              </a> */}
             </p>
             <SkillsWrapper>
               <ul>
@@ -78,7 +84,6 @@ const About = () => {
               <TwitterIcon />
               <div> @__tsuki__42</div>
             </a>
-            <br />
             <a
               target="_blank"
               href="https://github.com/tsuki42"
