@@ -61,6 +61,7 @@ const About = () => {
               </ul>
 
               <ul>
+                <li>TypeScript</li>
                 <li>React Native</li>
                 <li>gRPC</li>
                 <li>Django</li>

@@ -186,7 +186,7 @@ const Navigation = () => {
               </DotsWrapper>
               <NavigationUL>
                 <NavigationLI>
-                  <a href="#">Contact</a>
+                  <a href="#contact">Contact</a>
                 </NavigationLI>
               </NavigationUL>
             </NavWrapper>

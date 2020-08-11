@@ -4,6 +4,7 @@ import GlobalStyles from "components/global-styles"
 import Navigation from "components/navigation"
 import About from "components/about"
 import Posts from "components/posts"
+import Contact from "components/contact"
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Navigation />
         <About />
         <Posts />
+        <Contact />
       </div>
     </>
   )
