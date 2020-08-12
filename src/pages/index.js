@@ -5,6 +5,7 @@ import Navigation from "components/navigation"
 import About from "components/about"
 import Posts from "components/posts"
 import Contact from "components/contact"
+import Footer from "components/footer"
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <About />
         <Posts />
         <Contact />
+        <Footer />
       </div>
     </>
   )
