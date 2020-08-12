@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Section1, MainContainer } from "components/sections"
 import Image from "components/image"
+import { useCustomTheme } from "context/custom-theme-provider"
 
 const GreetingWrapper = styled.div`
   display: grid;
@@ -160,6 +161,7 @@ const Corner = styled.div`
 `
 
 const Navigation = () => {
+  const { setMode } = useCustomTheme()
   return (
     <Section1>
       <MainContainer>
@@ -202,10 +204,30 @@ const Navigation = () => {
                 Personalize Theme
               </h5>
               <ThemeOptionsWrapper>
-                <ThemeDot style={{ backgroundColor: "#fff" }} />
-                <ThemeDot style={{ backgroundColor: "#192734" }} />
-                <ThemeDot style={{ backgroundColor: "#78866b" }} />
-                <ThemeDot style={{ backgroundColor: "#7E4C74" }} />
+                <ThemeDot
+                  style={{ backgroundColor: "#fff" }}
+                  onClick={() => {
+                    setMode("light")
+                  }}
+                />
+                <ThemeDot
+                  style={{ backgroundColor: "#192734" }}
+                  onClick={() => {
+                    setMode("blue")
+                  }}
+                />
+                <ThemeDot
+                  style={{ backgroundColor: "#78866b" }}
+                  onClick={() => {
+                    setMode("green")
+                  }}
+                />
+                <ThemeDot
+                  style={{ backgroundColor: "#7E4C74" }}
+                  onClick={() => {
+                    setMode("purple")
+                  }}
+                />
               </ThemeOptionsWrapper>
               <p
                 style={{
@@ -218,7 +240,7 @@ const Navigation = () => {
                 <br />
                 your next visit.
                 <br />
-                (This is still a work in progress)
+                (Still a work in progress)
               </p>
             </LeftColumn>
             <RightColumn>

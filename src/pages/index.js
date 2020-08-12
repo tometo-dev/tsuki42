@@ -7,6 +7,8 @@ import Posts from "components/posts"
 import Contact from "components/contact"
 import Footer from "components/footer"
 
+import { CustomThemeProvider } from "context/custom-theme-provider"
+
 const Home = () => {
   return (
     <>
@@ -23,10 +25,10 @@ const Home = () => {
 }
 
 const IndexPage = () => (
-  <>
+  <CustomThemeProvider>
     <SEO title="Home" />
     <Home />
-  </>
+  </CustomThemeProvider>
 )
 
 export default IndexPage

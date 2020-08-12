@@ -50,6 +50,7 @@ module.exports = {
         components: path.join(__dirname, "src/components"),
         constants: path.join(__dirname, "src/constants"),
         assets: path.join(__dirname, "src/assets"),
+        context: path.join(__dirname, "src/context"),
       },
     },
     {

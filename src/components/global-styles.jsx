@@ -2,20 +2,20 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
 :root {
-  --mainColor: #eaeaea;
-  --secondaryColor: #fff;
+  --mainColor: ${(props) => props.theme.colors.mainColor};
+  --secondaryColor: ${(props) => props.theme.colors.secondaryColor};
 
-  --borderColor: #c1c1c1;
+  --borderColor: ${(props) => props.theme.colors.borderColor};
 
-  --mainText: black;
-  --secondaryText: #4b5156;
+  --mainText: ${(props) => props.theme.colors.mainText};
+  --secondaryText: ${(props) => props.theme.colors.secondaryText};
 
-  --themeDotBorder: #24292e;
+  --themeDotBorder: ${(props) => props.theme.colors.themeDotBorder};
 
-  --previewBg: rgb(251, 249, 243, 0.8);
-  --previewShadow: #f0ead6;
+  --previewBg: ${(props) => props.theme.colors.previewBg};
+  --previewShadow: ${(props) => props.theme.colors.previewShadow};
 
-  --buttonColor: black;
+  --buttonColor: ${(props) => props.theme.colors.buttonColor};
 }
 
 html,
