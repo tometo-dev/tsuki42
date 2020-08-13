@@ -18,6 +18,9 @@ const PostContainer = styled.div`
 
   &:hover {
     cursor: pointer;
+    -webkit-box-shadow: 47px 35px 5px 0px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 47px 35px 5px 0px rgba(0, 0, 0, 0.63);
+    box-shadow: 47px 35px 5px 0px rgba(0, 0, 0, 0.63);
   }
 `
 
@@ -56,6 +59,11 @@ const Posts = () => {
             title="Role based access control in React-Redux apps"
             intro="Some insights into dealing with RBAC in React apps."
             link="https://dev.to/tsuki42/role-based-access-control-in-react-redux-apps-2i53"
+          />
+          <Post
+            title="CI/CD pipeline with Docker, Github actions, Dockerhub and Watchtower"
+            intro="A CI/CD pipeline for the development phase"
+            link="https://dev.to/tsuki42/ci-cd-pipeline-with-docker-github-actions-dockerhub-and-watchtower-3l3n"
           />
         </PostWrapper>
       </MainContainer>
