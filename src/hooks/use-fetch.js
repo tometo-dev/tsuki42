@@ -1,10 +1,10 @@
-import { useState, useEffect, useRef } from "react"
 import axios from "axios"
+import {useEffect, useRef, useState} from "react"
 
-export const useFetch = ({ url, config }) => {
+export const useFetch = ({url, config}) => {
   const [state, setState] = useState({
-    isLoading: true,
-    data: null,
+    isLoading : true,
+    data : null,
   })
 
   const isMounted = useRef()
@@ -12,28 +12,24 @@ export const useFetch = ({ url, config }) => {
   useEffect(() => {
     isMounted.current = true
     return () => {
-      isMounted.current = false
+    isMounted.current = false
     }
   }, [])
 
-  useEffect(() => {
-    if (isMounted.current) {
-      axios
-        .get(url, {
-          ...config,
-        })
-        .then((res) => res.json())
-        .then((res) => {
-          setState({
-            isLoading: false,
-            data: res,
-          })
-        })
-        .catch((err) => {
-          console.log(`Error in fetch: ${err}`)
-        })
-    }
-  }, [url, config])
+    useEffect(() => {
+      if (isMounted.current) {
+        axios
+            .get(url, {
+              ...config,
+            })
+            .then((res) => res.json())
+            .then((res) => {setState({
+                    isLoading : false,
+                    data : res,
+                  })})
+            .catch((err) => {console.log(`Error in fetch: ${err}`)})
+      }
+    }, [ url, config ])
 
-  return state
+    return state
 }
