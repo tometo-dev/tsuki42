@@ -37,7 +37,8 @@ const About = () => {
             <p>I love learning new things and applying them in my projects.</p>
 
             <p>
-              While I am mostly working on React, I also do backend in Go and Django.
+              While I am mostly working on React, I also do backend in Go and
+              Django.
             </p>
 
             {/* <p>
