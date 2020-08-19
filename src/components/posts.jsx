@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Section1, MainContainer } from "components/sections"
+import { useFetch } from "hooks/use-fetch"
 
 const PostWrapper = styled.div`
   display: grid;
@@ -43,29 +44,47 @@ const Post = ({ title, intro, link }) => (
     <PostContainer>
       <PostPreview>
         <PostTitle>{title}</PostTitle>
-        <PostIntro>{intro}</PostIntro>
+        {!!intro && <PostIntro>{intro}</PostIntro>}
       </PostPreview>
     </PostContainer>
   </a>
 )
 
 const Posts = () => {
+  const { data, isLoading } = useFetch({
+    url: "https://dev.to/api/articles/me",
+    config: {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "api-key": process.env.GATSBY_DEV_TO_API_KEY,
+      },
+      query: { per_page: "3" },
+    },
+  })
+
   return (
     <Section1>
       <MainContainer>
         <h3 style={{ textAlign: "center" }}>Things I wrote...</h3>
-        <PostWrapper>
-          <Post
-            title="Role based access control in React-Redux apps"
-            intro="Some insights into dealing with RBAC in React apps."
-            link="https://dev.to/tsuki42/role-based-access-control-in-react-redux-apps-2i53"
-          />
-          <Post
-            title="CI/CD pipeline with Docker, Github actions, Dockerhub and Watchtower"
-            intro="A CI/CD pipeline for the development phase"
-            link="https://dev.to/tsuki42/ci-cd-pipeline-with-docker-github-actions-dockerhub-and-watchtower-3l3n"
-          />
-        </PostWrapper>
+        {isLoading ? (
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <h4>Loading...</h4>
+          </div>
+        ) : (
+          <PostWrapper>
+            {data?.map((article) => (
+              <Post title={article.title} link={article.url} />
+            ))}
+          </PostWrapper>
+        )}
       </MainContainer>
     </Section1>
   )

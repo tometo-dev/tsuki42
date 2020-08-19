@@ -51,6 +51,7 @@ module.exports = {
         constants: path.join(__dirname, "src/constants"),
         assets: path.join(__dirname, "src/assets"),
         context: path.join(__dirname, "src/context"),
+        hooks: path.join(__dirname, "src/hooks"),
       },
     },
     {
