@@ -67,6 +67,7 @@ const Contact = () => {
               type="text"
               name="name"
               ref={register({ required: true })}
+              required
             />
             {errors.name && (
               <span style={{ color: "red" }}>This field is required</span>
@@ -79,6 +80,7 @@ const Contact = () => {
               type="text"
               name="subject"
               ref={register({ required: true })}
+              required
             />
             {errors.subject && (
               <span style={{ color: "red" }}>This field is required</span>
@@ -91,6 +93,7 @@ const Contact = () => {
               type="email"
               name="email"
               ref={register({ required: true })}
+              required
             />
             {errors.email && (
               <span style={{ color: "red" }}>This field is required</span>
@@ -99,13 +102,17 @@ const Contact = () => {
 
           <div>
             <FormLabel>Message</FormLabel>
-            <FormTextArea name="message" ref={register({ required: true })} />
+            <FormTextArea
+              name="message"
+              ref={register({ required: true })}
+              required
+            />
             {errors.message && (
               <span style={{ color: "red" }}>This field is required</span>
             )}
           </div>
 
-          <SendButton type="submit" className="pageclip-form__submit">
+          <SendButton type="submit" className="button pageclip-form__submit">
             Send
           </SendButton>
         </ContactForm>
