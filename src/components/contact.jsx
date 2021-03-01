@@ -57,8 +57,7 @@ const Contact = () => {
       <MainContainer>
         <h3 style={{ textAlign: "center" }}>Get In Touch</h3>
         <ContactForm
-          action="https://send.pageclip.co/cUBUdTiedO9NHcjzvwd6NzAMOixeQsjB"
-          className="pageclip-form"
+          action="https://rake.red/api/my-website/contact-me"
           method="post"
         >
           <div>
@@ -112,9 +111,7 @@ const Contact = () => {
             )}
           </div>
 
-          <SendButton type="submit" className="button pageclip-form__submit">
-            Send
-          </SendButton>
+          <SendButton type="submit">Send</SendButton>
         </ContactForm>
       </MainContainer>
     </Section2>
