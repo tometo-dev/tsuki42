@@ -29,17 +29,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Russo One`,
-          },
-          {
-            family: `Roboto Mono`,
-            variants: [`500`],
-          },
-        ],
+        fonts: [`russo one`],
+        display: `swap`,
       },
     },
     {
