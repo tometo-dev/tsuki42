@@ -11,6 +11,8 @@ const PostWrapper = styled.div`
 `
 
 const PostContainer = styled.div`
+  height: 100%;
+  width: 100%;
   border: 1px solid var(--borderColor);
   -webkit-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
@@ -18,15 +20,16 @@ const PostContainer = styled.div`
 
   &:hover {
     cursor: pointer;
-    -webkit-box-shadow: 47px 35px 5px 0px rgba(0, 0, 0, 0.63);
-    -moz-box-shadow: 47px 35px 5px 0px rgba(0, 0, 0, 0.63);
-    box-shadow: 47px 35px 5px 0px rgba(0, 0, 0, 0.63);
+    -webkit-box-shadow: 47px 35px 5px 10px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow: 47px 35px 5px 10px rgba(0, 0, 0, 0.63);
+    box-shadow: 47px 35px 5px 10px rgba(0, 0, 0, 0.63);
   }
 `
 
 const PostPreview = styled.div`
   background-color: #fff;
   padding: 15px;
+  height: 100%;
 `
 
 const PostTitle = styled.h5`

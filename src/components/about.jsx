@@ -43,8 +43,7 @@ const About = () => {
 
             <p>
               While I am currently employed, I am in search of a great team and
-              projects that interest me. Get in touch with me for
-              an interview!
+              projects that interest me. Get in touch with me for an interview!
             </p>
 
             <hr />
