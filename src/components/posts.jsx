@@ -68,6 +68,11 @@ const Posts = () => {
             intro="A CI/CD pipeline for the development phase"
             link="https://dev.to/tsuki42/ci-cd-pipeline-with-docker-github-actions-dockerhub-and-watchtower-3l3n"
           />
+          <Post
+            title="Getting more from your portfolio"
+            intro="A hassle-free, serverless way to collect form data"
+            link="https://dev.to/tsuki42/getting-more-from-your-portfolio-1bgk"
+          />
         </PostWrapper>
       </MainContainer>
     </Section1>
