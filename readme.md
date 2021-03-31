@@ -1,8 +1,7 @@
-<div align="center">
+<div>
   <table border="0" cellspacing="0" cellpadding="0">
     <tbody>
       <tr>
-        <td><img src="https://raw.githubusercontent.com/tsuki42/tsuki42/main/src/assets/cute-puppy.gif" width="200" height="auto"/></td>
         <td><img src="https://raw.githubusercontent.com/tsuki42/tsuki42/main/src/assets/cute-puppy.gif" width="200" height="auto"/></td>
       <tr>
     </tbody>
@@ -15,8 +14,6 @@
 - 🌱 Learning [Rust](https://github.com/rust-lang/rust) in my free time
 - 📫 You can reach me on [LinkedIn](https://www.linkedin.com/in/perfectsudh/)
 - 😄 Pronouns: He/Him
-
-<img src="https://i.imgur.com/kdKhgx6.gif" width="240px" align="center">
 
 <details>
 
