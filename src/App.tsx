@@ -1,7 +1,13 @@
-import React from "react"
+import * as React from "react"
 
-const App = () => {
-  return <div>Hello World!</div>
+import SampleApp from "./components/sample"
+
+function App() {
+  return (
+    <div className="w-screen h-screen bg-gray-600">
+      <SampleApp />
+    </div>
+  )
 }
 
 export default App
