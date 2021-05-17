@@ -5,6 +5,8 @@ module.exports = {
   },
   extends: [
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
     "standard",
     "plugin:prettier/recommended",
     "prettier/prettier",
@@ -21,6 +23,7 @@ module.exports = {
   rules: {
     // note you must disable the base rule as it can report incorrect errors
     "no-use-before-define": "off",
+    "no-unused-vars": "warn",
     "import/order": [
       "error",
       {
