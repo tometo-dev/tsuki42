@@ -1,3 +1,4 @@
+<!--
 <div>
   <table border="0" cellspacing="0" cellpadding="0">
     <tbody>
@@ -20,3 +21,18 @@
 ![My github stats](https://github-readme-stats.vercel.app/api?username=tsuki42&show_icons=false)
 
 </details>
+-->
+
+<!--
+  After getting r̶i̶c̶k̶r̶o̶l̶l̶e̶d̶ motivated by https://github.com/poteto, I decided to do the same
+ -->
+
+<img 
+  alt="Never gonna give you up
+  Never gonna let you down
+  Never gonna run around and desert you
+  Never gonna make you cry
+  Never gonna say goodbye
+  Never gonna tell a lie and hurt you" 
+  src="https://raw.githubusercontent.com/tsuki42/tsuki42/main/src/assets/nice.gif" 
+  width="100%">
