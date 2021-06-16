@@ -34,5 +34,5 @@
   Never gonna make you cry
   Never gonna say goodbye
   Never gonna tell a lie and hurt you" 
-  src="https://raw.githubusercontent.com/tsuki42/tsuki42/main/src/assets/nice.gif" 
+  src="https://github.com/tsuki42/tsuki42/blob/main/src/assets/nice.gif?raw=true" 
   width="100%">
