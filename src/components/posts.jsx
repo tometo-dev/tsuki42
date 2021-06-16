@@ -41,7 +41,7 @@ const PostIntro = styled.p`
   font-size: 14px;
 `
 
-const Post = ({ title, intro, link }) => (
+export const Post = ({ title, intro, link }) => (
   <a href={link} target="_blank" rel="noreferrer">
     <PostContainer>
       <PostPreview>

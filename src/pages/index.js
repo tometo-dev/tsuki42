@@ -16,7 +16,6 @@ const Home = () => {
       <div>
         <Navigation />
         <About />
-        <Posts />
         <Contact />
         <Footer />
       </div>
